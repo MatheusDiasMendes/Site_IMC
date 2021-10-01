@@ -17,7 +17,7 @@ section{
     border-radius: 15px;
     padding: 15px;
     width:1250px;
-    height: 870px;
+    height: 830px;
     margin: auto;
     box-shadow: 5pt 5pt 10pt rgba(0, 0, 0,0.432);
 }
@@ -107,15 +107,13 @@ header {
   .result{
     display: flex;
     margin-top: 20px;
-    align-items: justify;
+    align-items: center;
+    text-align: center;
     width: 1200px;
-    height: 140px;
+    height: 100px;
     border-radius: 5px;
-    font: normal 1.0rem bold;
     box-shadow: 0px 0px 10px black;
     background: rgb(255, 255, 255);
-    color: rgb(255,198,0);
     padding: 20px;
     box-sizing: border-box;
-    user-select: none;
   }
