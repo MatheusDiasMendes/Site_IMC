@@ -1,5 +1,8 @@
 $('body').hide(300);
 $('body').show(500);
+let btn = document.getElementById('ceta2');
+btn.hide();
+
 
 
 /*
@@ -21,6 +24,8 @@ function imc () {
     if (nome !== '' && altura !== '' && peso !== '') {
 
         const valorIMC = (peso/(altura**2)).toFixed(1);
+        const ideal1 = ((altura**2)*18.5).toFixed(1);
+        const ideal2 = ((altura**2)*25).toFixed(1);
         
         let classificacao = '';
 
@@ -38,7 +43,7 @@ function imc () {
             classificacao = 'com obesidade grau III.';
         }
 
-        resultado.textContent = `Olá, ${nome}! Com ${peso}kg e ${altura}m, seu IMC é ${valorIMC}. Atualmente, você está ${classificacao}`;
+        resultado.textContent = `Olá, ${nome}! Com ${peso}kg e ${altura}m, seu IMC é ${valorIMC}. O seu peso idal está entre ${ideal1}kg e ${ideal2}kg. Atualmente, você está ${classificacao}`;
 
     }else {
         resultado.textContent = 'Para calcular o seu IMC , preencha todos os campos.';
@@ -54,3 +59,4 @@ function limpar() {
     altura.clear();
     peso.clear();
   }
+
